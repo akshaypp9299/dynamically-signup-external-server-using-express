@@ -46,7 +46,7 @@ app.post("/signup", (req, res) => {
     console.log(response.statusCode);
     if(response.statusCode === 200)
     {
-        res.send("Hey there!!! you made it.")
+        res.send("Tune kar ke dikhaya!!!")
     }
     else{
         res.send("Nikal Lavde!!!")
@@ -75,4 +75,7 @@ app.listen(process.env.PORT || 3000,function(){
 // unique id
 // e6a8cecbc9  
 
-
+//now if you have changed something in your code and you want to reflect that in your deployed heroku app....then after making the changes in the  code file go to the cmd line
+// git add .
+// git commit -m "Updated 2nd version"
+// git push heroku master
